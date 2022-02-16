@@ -1,20 +1,23 @@
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import './Header.css';
 
 const Header = () => {
     return (
         <div>
-            <Navbar>
-                <Container>
-                    <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
-                    <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
-                        <Navbar.Text>
-                            Signed in as: <a href="#login">Mark Otto</a>
-                        </Navbar.Text>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+            <div className="header-container">
+                <div className="header-wrapper">
+                    <div className="header-left header-style">
+                        <a className='p-4' href="tel:+1(135)-1984-2020">+1(135) 1984 2020</a>
+                        <a href="mailto:hello@edon.com">hello@edon.com</a>
+                    </div>
+                    <div className="header-right header-style">
+                        <a href="#login">Log In</a>
+                        <a className='p-4' href="#register">Register</a>
+                        <a href="#language">English</a>
+                    </div>
+                </div>
+            </div>
+            <hr />
         </div>
     );
 };

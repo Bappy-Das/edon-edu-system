@@ -1,0 +1,23 @@
+.header-container{
+    background-color: white;
+}
+.header-wrapper{
+    padding: 15px 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header-left{
+    padding-left: 70px;
+}
+.header-style a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #6a6f73;
+}
+.header-style a:hover{
+    color: #1bbf72;
+}
+.header-right{
+    padding-right: 70px;
+}
