@@ -1,0 +1,36 @@
+
+
+.category-img{
+    padding: 30px;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 0 0 6px 6px;
+    background-color: #f5f1ee;
+}
+
+.swiper-button-next {
+  background-image: url(../../../photos/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev {
+  background-image: url(../../../photos/left-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+
