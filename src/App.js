@@ -1,6 +1,8 @@
 import './App.css';
+import ExploreCategory from './components/Home/ExploreCategory/ExploreCategory';
 import Header from './components/Shared/Header/Header';
 import Navbar from './components/Shared/Navbar/Navbar'
+import Footer from './components/Shared/Footer/Footer'
 
 
 
@@ -9,8 +11,8 @@ function App() {
     <div className="App">
       <Header />
       <Navbar />
-      <h1>Hello Edon and Educational site</h1>
-      <h1>Hello Edon and Educational site</h1>
+      <ExploreCategory />
+      <Footer />
     </div>
   );
 }
