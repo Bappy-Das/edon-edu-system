@@ -17,6 +17,7 @@
 }
 .navbar-left{
     flex: 1;
+    margin-left: 70px;
 }
 .navbar-center{
     flex: 2;
