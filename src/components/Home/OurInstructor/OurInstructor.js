@@ -19,60 +19,62 @@ const OurInstructor = () => {
                     <br />
                     <button className='instructor-btn'>Instructor</button>
                 </div>
-                <div className="col-12 col-md-7">
-                    <Swiper watchSlidesProgress={true}
-                        slidesPerView={3}
-                        spaceBetween={30}
-                        slidesPerGroup={1}
-                        loop={true}
-                        loopFillGroupWithBlank={true}
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        }}
-                        modules={[Autoplay]}
-                        className="mySwiper">
-                        <SwiperSlide>
-                            <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-4.jpg" alt="" />
-                            <h3 className='instructor-name'>Jesse Joplin</h3>
-                            <p className='instructor-designation'>Content Strategist</p>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-1.jpg" alt="" />
-                            <h3 className='instructor-name'>Lance Altman</h3>
-                            <p className='instructor-designation'>Full Stack Developer</p>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='instructor-img' src="https://i.ibb.co/GPnwYZ8/instructors-2.jpg" alt="" />
-                            <h3 className='instructor-name'>Sally Welch</h3>
-                            <p className='instructor-designation'>Art Director</p>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-3.jpg" alt="" />
-                            <h3 className='instructor-name'>Willie Mcdonald</h3>
-                            <p className='instructor-designation'>Photographer</p>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-4.jpg" alt="" />
-                            <h3 className='instructor-name'>Jesse Joplin</h3>
-                            <p className='instructor-designation'>Content Strategist</p>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-1.jpg" alt="" />
-                            <h3 className='instructor-name'>Lance Altman</h3>
-                            <p className='instructor-designation'>Full Stack Developer</p>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='instructor-img' src="https://i.ibb.co/GPnwYZ8/instructors-2.jpg" alt="" />
-                            <h3 className='instructor-name'>Sally Welch</h3>
-                            <p>Art Director</p>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-3.jpg" alt="" />
-                            <h3 className='instructor-name'>Willie Mcdonald</h3>
-                            <p className='instructor-designation'>Photographer</p>
-                        </SwiperSlide>
-                    </Swiper>
+                <div className="col-12 col-md-7 ">
+                    <div className='instrctor-group'>
+                        <Swiper watchSlidesProgress={true}
+                            slidesPerView={3}
+                            spaceBetween={30}
+                            slidesPerGroup={1}
+                            loop={true}
+                            loopFillGroupWithBlank={true}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
+                            modules={[Autoplay]}
+                            className="mySwiper">
+                            <SwiperSlide>
+                                <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-4.jpg" alt="" />
+                                <h3 className='instructor-name'>Jesse Joplin</h3>
+                                <p className='instructor-designation'>Content Strategist</p>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-1.jpg" alt="" />
+                                <h3 className='instructor-name'>Lance Altman</h3>
+                                <p className='instructor-designation'>Full Stack Developer</p>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className='instructor-img' src="https://i.ibb.co/GPnwYZ8/instructors-2.jpg" alt="" />
+                                <h3 className='instructor-name'>Sally Welch</h3>
+                                <p className='instructor-designation'>Art Director</p>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-3.jpg" alt="" />
+                                <h3 className='instructor-name'>Willie Mcdonald</h3>
+                                <p className='instructor-designation'>Photographer</p>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-4.jpg" alt="" />
+                                <h3 className='instructor-name'>Jesse Joplin</h3>
+                                <p className='instructor-designation'>Content Strategist</p>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-1.jpg" alt="" />
+                                <h3 className='instructor-name'>Lance Altman</h3>
+                                <p className='instructor-designation'>Full Stack Developer</p>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className='instructor-img' src="https://i.ibb.co/GPnwYZ8/instructors-2.jpg" alt="" />
+                                <h3 className='instructor-name'>Sally Welch</h3>
+                                <p>Art Director</p>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img className='instructor-img' src="https://edon-ng.envytheme.com/assets/images/instructors/instructors-3.jpg" alt="" />
+                                <h3 className='instructor-name'>Willie Mcdonald</h3>
+                                <p className='instructor-designation'>Photographer</p>
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
                 </div>
             </div>
         </div>
