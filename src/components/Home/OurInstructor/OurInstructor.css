@@ -1,0 +1,61 @@
+.instructor-title{
+    font-family: "Roboto", sans-serif;  
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    line-height: 1.8;
+    margin-top: 100px;
+}
+.instructor-paragraph{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #6a6f73;
+    line-height: 1.8;
+}
+.instructor-btn{
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #1bbf72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+body {
+  background: #eee;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 650px;
+  margin-top: 145px;
+}
+.swiper-slide {
+  height: 300px;
+  text-align: center;
+  transition: width 2s, height 1s;
+}
+.instructor-img{
+    height: 190px;
+    height: 210px;
+    border-radius: 5px;
+}
+.instructor-name{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.instructor-name:hover{
+    color: #1bbf72;
+}
+.instructor-designation{
+    font-size: 14px;
+}
