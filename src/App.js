@@ -1,10 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import ExploreCategory from './components/Home/ExploreCategory/ExploreCategory';
+import Header from './components/Shared/Header/Header';
+import Navbar from './components/Shared/Navbar/Navbar'
+import Footer from './components/Shared/Footer/Footer'
+import Achievements from './components/Home/Achievements/Achievements';
+import OurInstructor from './components/Home/OurInstructor/OurInstructor';
+
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Edon and Educational site</h1>
+      <Header />
+      <Navbar />
+      <ExploreCategory />
+      <Achievements />
+      <OurInstructor/>
+      <Footer />
     </div>
   );
 }
