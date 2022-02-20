@@ -1,21 +1,23 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
+
 import footerLogo from '../../../photos/white-logo.png'
 import './Footer.css'
 const Footer = () => {
     return (
         <div className='footer-bg p-5'>
             <Container>
-                <Row >
+                <Row className='my-5'>
                     <Col md={3}>
                         <img src={footerLogo} alt="" srcset="" />
                         <p className='mt-4'> Vivamus suscipit tortor eget felis porttitor volutpat. Donec rutrum congue leo eget malesuada. Curabitu Nulla porttitor accumsan tincidunt.</p>
                         <div className=''>
-                            <AiFillTwitterCircle />
-                            <AiFillTwitterCircle />
-                            <AiFillTwitterCircle />
-                            <AiFillTwitterCircle />
+                            <FaYoutubeSquare size={40} />
+                            <FaFacebookSquare size={40} />
+                            <FaTwitterSquare size={40} />
+                            <FaLinkedin size={40} />
+
                         </div>
                     </Col>
                     <Col md={3}>
@@ -50,7 +52,9 @@ const Footer = () => {
                     </Col>
 
                 </Row>
+
                 <Row>
+                    <hr />
                     <p className='text-center'>Copyright &copy; 2021 Edon</p>
                 </Row>
             </Container>

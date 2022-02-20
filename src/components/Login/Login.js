@@ -1,17 +1,19 @@
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FaFacebookSquare } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
     return (
-        <Container className="w-50 my-4">
+        <Container className="w-50 my-5">
             <h1 className="text-center">Sign In</h1>
             <hr />
-            {/* <div className="text-center" >
-                <Button onClick={facebookLogin} className="mx-2 w-25" variant="outline-primary"><FaFacebookSquare size={35} /></Button>
-                <Button onClick={handleLogin} className="w-25" variant="outline-warning"><FcGoogle size={35} /></Button>
+            <div className="text-center" >
+                <Button className="mx-2 w-25" variant="outline-primary"><FaFacebookSquare size={35} /></Button>
+                <Button className="w-25" variant="outline-warning"><FcGoogle size={35} /></Button>
 
-            </div> */}
+            </div>
             <hr className="w-50 mx-auto" />
             <Form>
                 <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicEmail">
