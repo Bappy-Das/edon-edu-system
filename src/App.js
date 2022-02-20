@@ -7,6 +7,7 @@ import Achievements from './components/Home/Achievements/Achievements';
 import OurInstructor from './components/Home/OurInstructor/OurInstructor';
 import LifeTimeAccess from './components/Home/LifeTimeAccess/LifeTimeAccess';
 import Community from './components/Home/Community/Community';
+import Feedback from './components/Home/Feedback/Feedback';
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <ExploreCategory />
       <Achievements />
       <LifeTimeAccess/>
+      <Feedback/>
       <OurInstructor/>
       <Community/>
       <Footer />
