@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <div>
@@ -11,7 +11,7 @@ const Header = () => {
                         <a href="mailto:hello@edon.com">hello@edon.com</a>
                     </div>
                     <div className="header-right header-style">
-                        <a href="#login">Log In</a>
+                        <Link to="/login">Log In</Link>
                         <a className='p-4' href="#register">Register</a>
                         <a href="#language">English</a>
                     </div>
