@@ -20,7 +20,7 @@ const OurInstructor = () => {
                     <button className='instructor-btn'>Instructor</button>
                 </div>
                 <div className="col-12 col-md-7 ">
-                    <div className='instrctor-group'>
+                    <div className='instrctor-group '>
                         <Swiper watchSlidesProgress={true}
                             slidesPerView={3}
                             spaceBetween={30}

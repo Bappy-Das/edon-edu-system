@@ -18,7 +18,8 @@ const Achievements = () => {
                     </Row>
                 </Col>
                 <Col>
-                    <img className='img-fluid' src={counterImg} alt="" srcset="" /></Col>
+                    <img className='img-fluid ' src={counterImg} alt="" srcset="" />
+                </Col>
             </Row>
             <Row>
                 <Col>
