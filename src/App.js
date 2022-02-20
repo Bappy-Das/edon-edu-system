@@ -8,6 +8,7 @@ import OurInstructor from './components/Home/OurInstructor/OurInstructor';
 import LifeTimeAccess from './components/Home/LifeTimeAccess/LifeTimeAccess';
 import Community from './components/Home/Community/Community';
 import Banner from './components/Home/Banner/Banner';
+import Banefits from './components/Home/Banefits/Banefits';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <Navbar />
       <Banner />
+      <Banefits />
       <ExploreCategory />
       <Achievements />
       <LifeTimeAccess />
