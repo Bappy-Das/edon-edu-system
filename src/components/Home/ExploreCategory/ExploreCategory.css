@@ -1,4 +1,11 @@
+.explore-category h2{
+  font-weight: bold;
+  font-size: 2rem;
+}
 
+.category-name{
+  font-weight: bold;
+}
 
 .category-img{
     padding: 30px;

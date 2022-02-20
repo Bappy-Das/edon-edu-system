@@ -24,26 +24,29 @@ const images = [
     },
     {
         img: category2,
-        category: 'Marketing'
+        category: 'Business'
     },
     {
         img: category3,
-        category: 'Marketing'
+        category: 'Design'
     },
     {
         img: category4,
-        category: 'Marketing'
+        category: 'Development'
     },
     {
         img: category5,
-        category: 'Marketing'
+        category: 'Photography'
     }
 ]
 
 export default function App() {
     return (
-        <>
+        <div className="my-5">
             <Container>
+                <div className="my-5 explore-category">
+                    <h2>Explore The Categories</h2>
+                </div>
                 <Swiper
                     slidesPerView={4}
                     spaceBetween={30}
@@ -71,7 +74,7 @@ export default function App() {
                                     </div>
 
                                 </div>
-                                <h4 className="">Development</h4>
+                                <h4 className="category-name">{categoryimg?.category}</h4>
 
                             </SwiperSlide>
 
@@ -80,6 +83,6 @@ export default function App() {
 
                 </Swiper>
             </Container>
-        </>
+        </div>
     );
 }
