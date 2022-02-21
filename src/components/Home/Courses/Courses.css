@@ -19,7 +19,7 @@
     padding: 12px 35px;
 }
 .course-main-btn:hover{
-    background-color: black;
+    background-color: rgb(15, 15, 15);
 }
 
 /* Make it responsive */
