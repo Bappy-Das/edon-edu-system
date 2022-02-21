@@ -2,9 +2,8 @@ import React from 'react';
 import './OurInstructor.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
-// Import Swiper styles
+// Import Swiper styles -----
 import "swiper/css";
-// import "./styles.css";
 
 const OurInstructor = () => {
     return (
