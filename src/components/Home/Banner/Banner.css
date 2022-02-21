@@ -1,0 +1,28 @@
+.banner-head{
+    background-image: url(../../../photos/banner-bg.e397b0299aadacaf.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.bannar-content{
+    max-width: 635px;
+    margin-left: auto;
+}
+.top-title{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #1bbf72;
+}
+
+.banner-title{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.primary-color{
+    color: #1bbf72;
+}
+.banner-footer{
+    margin-bottom: 25px;
+}

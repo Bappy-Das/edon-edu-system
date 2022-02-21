@@ -1,0 +1,49 @@
+.bg-pd-color{
+    background-color: white;
+}
+.course-img{
+    width: 260px;
+    height: 150px;
+}
+.course-name{
+    color: 171717;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+.course-name:hover{
+    color: #1bbf72;
+}
+.course-bottom-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.hr{
+    margin: 0;
+    padding: 0;
+}
+.btn-course{
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #000000;
+    padding: 7px 15px 7px 15px;
+    font-size: 14px;
+    font-family: inherit;
+    border: none;
+    margin-top: 6px;
+}
+.btn-course:hover{
+    background-color: #198754;
+    color: white;
+}
+.btn-course-instructor{
+    font-size: 15px;
+    border: none;
+    background-color: white;
+}
+.btn-course-instructor:hover{
+    color: #198754;
+}
