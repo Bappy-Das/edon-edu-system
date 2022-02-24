@@ -7,6 +7,7 @@ import Register from './components/Register/Register';
 import Header from './components/Shared/Header/Header';
 import Navbar from './components/Shared/Navbar/Navbar';
 import Footer from './components/Shared/Footer/Footer';
+import Courses from './components/AllCourses/Courses/Courses';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />} />
+          <Route path="courses" element={<Courses />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Routes>
