@@ -7,7 +7,7 @@ const PopularCourse = () => {
         <div className='container'>
             <div className='course-bottom-section'>
                 <h1 className="text-pd-color pb-5">Popular Courses</h1>
-                <p><Link to={`#`}>
+                <p><Link to="/courses">
                     <button className="course-main-btn">View All Courses</button>
                 </Link></p>
             </div>
