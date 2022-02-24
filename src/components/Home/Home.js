@@ -7,11 +7,8 @@ import Achievements from './Achievements/Achievements';
 import LifeTimeAccess from './LifeTimeAccess/LifeTimeAccess';
 import OurInstructor from './OurInstructor/OurInstructor';
 import Community from './Community/Community';
-<<<<<<< HEAD
 import Courses from './Courses/Courses';
 
-=======
->>>>>>> 8ba42381e768e51d1607c68087c03849ede4ea4d
 
 const Home = () => {
     return (
@@ -19,10 +16,7 @@ const Home = () => {
             <Banner />
             <Banefits />
             <ExploreCategory />
-<<<<<<< HEAD
             <Courses/>
-=======
->>>>>>> 8ba42381e768e51d1607c68087c03849ede4ea4d
             <Achievements />
             <LifeTimeAccess />
             <OurInstructor />
