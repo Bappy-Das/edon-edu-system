@@ -5,7 +5,7 @@ import './Courses.css';
 const Courses = () => {
     const [Courses, setCourses] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/courses')
+        fetch('https://serene-mountain-32822.herokuapp.com/courses')
             .then(res => res.json())
             .then(data => setCourses(data));
     }, [])
