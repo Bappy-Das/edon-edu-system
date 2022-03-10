@@ -3,15 +3,24 @@ import { Button, Container, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaFacebookSquare } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import useFirebase from '../../hooks/useFirebase';
+
 
 const Login = () => {
+
+    const { singInUsingGoogle } = useFirebase()
+    const handleGoogleLogin = () => {
+        singInUsingGoogle()
+    }
+
+
     return (
         <Container className="w-50 my-5">
             <h1 className="text-center">Sign In</h1>
             <hr />
             <div className="text-center" >
                 <Button className="mx-2 w-25" variant="outline-primary"><FaFacebookSquare size={35} /></Button>
-                <Button className="w-25" variant="outline-warning"><FcGoogle size={35} /></Button>
+                <Button onClick={handleGoogleLogin} className="w-25" variant="outline-warning"><FcGoogle size={35} /></Button>
 
             </div>
             <hr className="w-50 mx-auto" />
