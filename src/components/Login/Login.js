@@ -1,17 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaFacebookSquare } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import useFirebase from '../../hooks/useFirebase';
 
 
 const Login = () => {
+    const [loginData, setLoginData] = useState({});
+    const { singInUsingGoogle, emailPassLogin, saveUserGoogle, isLoading } = useFirebase()
+    const location = useLocation()
+    const navigate = useNavigate();
+    // const redirect_uri = location.state?.from || '/'
 
-    const { singInUsingGoogle } = useFirebase()
+    const handleOnChange = e => {
+        const field = e.target.name;
+        const value = e.target.value;
+        const newLoginData = { ...loginData };
+        newLoginData[field] = value;
+        setLoginData(newLoginData)
+    }
+
+    const handleSubmit = (event) => {
+        emailPassLogin(loginData.email, loginData.password)
+            .then((userCredential) => {
+                navigate(location.state?.from || '/')
+
+            })
+            .catch((error) => {
+
+            })
+        event.preventDefault();
+
+    };
     const handleGoogleLogin = () => {
         singInUsingGoogle()
+            .then(result => {
+                // saveUserGoogle(result.user.email, result.user.displayName)
+                navigate(location.state?.from || '/')
+                console.log(result.user)
+            })
     }
+
+
+    // const { singInUsingGoogle } = useFirebase()
+    // const handleGoogleLogin = () => {
+    //     singInUsingGoogle()
+    // }
 
 
     return (
@@ -24,10 +59,10 @@ const Login = () => {
 
             </div>
             <hr className="w-50 mx-auto" />
-            <Form>
+            <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control name="email" onChange={handleOnChange} type="email" placeholder="Enter email" />
                 </Form.Group>
                 {/* <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>User Name</Form.Label>
@@ -36,13 +71,13 @@ const Login = () => {
 
                 <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control name="password" onChange={handleOnChange} type="password" placeholder="Password" />
                 </Form.Group>
                 <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicCheckbox">
                     <Link to="/register">Create an account</Link>
                 </Form.Group>
                 <div className="text-center">
-                    <Button className="w-50" variant="primary">
+                    <Button type="submit" className="w-50" variant="primary">
                         Sign In
                     </Button>
                 </div>
