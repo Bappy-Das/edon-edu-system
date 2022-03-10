@@ -18,7 +18,7 @@ const Course = ({ course }) => {
                 <Link to={`/booking/${_id}`}>
                     <button className=" btn-course-instructor">By: {by}</button>
                 </Link>
-                <Link to={`/booking/${_id}`}>
+                <Link to={`/enroll/${_id}`}>
                     <button className=" btn-course">Add to Cart</button>
                 </Link>
             </div>
