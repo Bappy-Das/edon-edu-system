@@ -20,7 +20,7 @@ const Enroll = () => {
     return (
         <div className='course-details-bg'>
             <div className='container'>
-                <h1 className="pt-5 pb-5 header-style">
+                <h1 className="pt-5 pb-5 header-enroll-style">
                     {details?.courseName}
                 </h1>
                 <div className="row">
