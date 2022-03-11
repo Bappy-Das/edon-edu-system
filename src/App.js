@@ -10,6 +10,7 @@ import Footer from './components/Shared/Footer/Footer';
 import Courses from './components/AllCourses/Courses/Courses';
 import Blogs from './components/AllBlog/Blogs/Blogs';
 import Fao from './components/fao/Fao';
+import ContactUs from './components/ContactUs/ContactUs';
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="fao" element={<Fao />} />
           <Route path="courses" element={<Courses />} />
+          <Route path="contact" element={<ContactUs />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />

@@ -13,9 +13,11 @@ const Navbar = () => {
                     <div className="navbar-center navbar-style">
                         <Link to="/home">Home</Link>
                         <Link className='p-4' to="/courses">Courses</Link>
-                        <a href="##">Pages</a>
+                        <Link className='p-4' to="/pages">Pages</Link>
+
                         <Link className='p-4' to="/blogs">Blog</Link>
-                        <a href="##">Contact</a>
+                        <Link className='p-4' to="/contact">Contact</Link>
+
                     </div>
                     <div className="navbar-right">
                         <div className="search-container">
