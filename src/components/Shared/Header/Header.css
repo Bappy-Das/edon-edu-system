@@ -21,3 +21,6 @@
 .header-right{
     padding-right: 70px;
 }
+.user-p-head{
+    cursor: pointer;
+}

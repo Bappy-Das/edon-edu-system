@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Enroll.css';
 import { useParams } from 'react-router-dom';
 
 const Enroll = () => {
@@ -18,38 +19,38 @@ const Enroll = () => {
 
     return (
         <div className='container'>
-            <h1 className="pt-5 text-center header-style">
+            <h1 className="pt-5 pb-5 header-style">
                 {details?.courseName}
             </h1>
             <div className="row">
-                <div className="col-12 col-md-7">
-                    <h4>Description</h4>
-                    <p>{details?.description}</p>
+                <div className="col-12 col-md-8">
+                    <h3 className='course-details-title'>Description</h3>
+                    <p className='course-details-paragraph course-details'>{details?.description}</p>
                     <br />
-                    <h4>Requirements</h4>
-                    <p>{details?.requirments}</p>
+                    <h3 className='course-details-title'>Requirements</h3>
+                    <p className='course-details-paragraph course-details'>{details?.requirments}</p>
                     <br />
-                    <h4>What you'll learn</h4>
-                    <p>{details?.whylearn}</p>
+                    <h3 className='course-details-title'>What you'll learn</h3>
+                    <p className='course-details-paragraph course-details'>{details?.whylearn}</p>
                 </div>
-                <div className="col-12 col-md-5">
-                    <img src={details?.image} alt="" />
-                    <h1>$ {details?.price}</h1>
-                    <p>This course includes:
-                        <br />
-                        2 hours on-demand video
-                        <br />
-                        1 articles
-                        <br />
-                        Full lifetime access
-                        <br />
-                        Access on mobile and TV
-                        <br />
-                        Certificate of completion
-                        <br />
-                        Language: English <br />
-                        Course Level: Intermediate</p>
-                        <button className=" btn-course">Add to Cart</button>
+                <div className="col-12 col-md-4 enroll-bg">
+                    <img className='enroll-img' src={details?.image} alt="" />
+                    <div className='container'>
+                        <h2 className='enroll-price'>$ {details?.price}</h2>
+                        <p className='course-includes'>This course includes:</p>
+                        <ul className='course-li'>
+                        <li>1.5 hours on-demand video</li>
+                        <li>1 article</li>
+                        <li>6 downloadable resources</li>
+                        <li>1 practice test</li>
+                        <li>Full lifetime access</li>
+                        <li>Access on mobile and TV</li>
+                        <li>Assignments</li>
+                        <li>Certificate of completion</li>
+                        <li>NASBA CPE credits: 2.4</li>
+                    </ul>
+                        <button className=" mt-4 btn-enroll">Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
