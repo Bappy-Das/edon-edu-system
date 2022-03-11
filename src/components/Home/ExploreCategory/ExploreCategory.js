@@ -70,7 +70,7 @@ export default function App() {
                             <SwiperSlide>
                                 <div className="category-div">
                                     <div className="category-img p-3 ">
-                                        <img src={categoryimg?.img} className='img-fluid' alt="" srcset="" />
+                                        <img src={categoryimg?.img} className='img-fluid' alt="" srcSet="" />
                                     </div>
 
                                 </div>

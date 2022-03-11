@@ -8,6 +8,7 @@ import LifeTimeAccess from './LifeTimeAccess/LifeTimeAccess';
 import OurInstructor from './OurInstructor/OurInstructor';
 import Community from './Community/Community';
 import PopularCourse from './PopularCourse';
+import LatestBlog from '../AllBlog/LatestBlog/LatestBlog';
 
 
 const Home = () => {
@@ -16,10 +17,12 @@ const Home = () => {
             <Banner />
             <Banefits />
             <ExploreCategory />
-            <PopularCourse/>
+            <PopularCourse />
             <Achievements />
             <LifeTimeAccess />
             <OurInstructor />
+
+            <LatestBlog />
             <Community />
 
         </div>

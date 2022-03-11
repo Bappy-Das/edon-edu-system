@@ -1,13 +1,13 @@
 // import axios from "axios";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 import firebaseAuthentication from "../firebase/firebase.init";
 
 firebaseAuthentication();
 
 const useFirebase = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [user, setUser] = useState({});
     const [error, setError] = useState({});
     const [isLoading, setIsLoading] = useState(true)
@@ -35,7 +35,7 @@ const useFirebase = () => {
                     displayName: name
 
                 }).then(() => {
-                    navigate('/fao')
+                    // navigate('/fao')
 
                 }).catch((error) => {
 

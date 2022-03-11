@@ -7,9 +7,9 @@ import useFirebase from '../../hooks/useFirebase';
 
 
 const Register = () => {
-    const { register } = useFirebase()
+    const { register, user } = useFirebase()
     const [loginData, setLoginData] = useState({});
-    const history = useNavigate()
+    const navigate = useNavigate()
 
     const handleOnChange = e => {
         const field = e.target.name;
@@ -22,7 +22,12 @@ const Register = () => {
     const handleSubmit = (event) => {
         // console.log(loginData)
         register(loginData.email, loginData.password, loginData.name, loginData.phone)
-
+        if (user?.displayName) {
+            navigate('/fao')
+        }
+        else {
+            navigate('/')
+        }
         event.preventDefault();
         // const data = new FormData(event.currentTarget);
     }
@@ -34,11 +39,11 @@ const Register = () => {
 
             <Form onSubmit={handleSubmit}>
                 <Row>
-                    <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicEmail">
+                    <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicname">
                         <Form.Label>Full Name</Form.Label>
                         <Form.Control name="name" onChange={handleOnChange} type="text" placeholder="Jhon Due" />
                     </Form.Group>
-                    <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicEmail">
+                    <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicphone">
                         <Form.Label>Phone</Form.Label>
                         <Form.Control name="phone" onChange={handleOnChange} type="text" pattern="[0-9]{11}" placeholder="01700000000" />
                     </Form.Group>
@@ -57,7 +62,7 @@ const Register = () => {
                         <Form.Control name="password" onChange={handleOnChange} type="password" placeholder="Password" />
                     </Form.Group>
 
-                    <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicPassword">
+                    <Form.Group className="mb-3 w-50 mx-auto" >
                         <Form.Label>Re Enter Password</Form.Label>
                         <Form.Control name="password" onChange={handleOnChange} type="password" placeholder="Re Enter Password" />
                     </Form.Group>
