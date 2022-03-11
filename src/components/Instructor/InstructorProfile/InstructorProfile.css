@@ -1,0 +1,20 @@
+.instructor-profile{
+    font-family: Roboto, sans-serif;
+}
+.instructor-details-img{
+    width: 436px;
+    height: 436px;
+}
+.container{
+    margin-top: 70px;
+}
+.instructor-name-single{
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.instructor-details{
+    margin-bottom: 15px;
+    line-height: 1.8;
+    font-family: Roboto, sans-serif;
+}
