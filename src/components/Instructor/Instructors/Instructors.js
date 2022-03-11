@@ -11,7 +11,7 @@ const Instructors = () => {
     }, [])
     return (
         <div>
-            <h1 className='instructor-title text-center mb-5'>These Are Our Instructors</h1>
+            <h1 className='instructor-title-name text-center mb-5'>These Are Our Instructors</h1>
             <div className="container">
                 <div className="course-hp-container">
                     {

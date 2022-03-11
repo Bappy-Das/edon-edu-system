@@ -7,7 +7,7 @@ const Instructor = ({ instructor }) => {
     const { _id, instructorDesignation, picture, instructorName } = instructor;
     return (
         <div className="pb-3 bg-pd-color">
-            <img className="instructor-img" src={picture} alt="" />      
+            <img className="instructors-img" src={picture} alt="" />      
             <Link to={`/instructorProfile/${_id}`}>
             <h3 className="p-2 course-name">{instructorName}</h3>
                 </Link>
