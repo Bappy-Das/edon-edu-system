@@ -8,6 +8,7 @@ const Blog = ({ blogs }) => {
     return (
         <div >
             <Link className="text-decoration-none dark" to="/">
+
                 <div className="col">
                     <div className="card">
                         <img src={img} className="card-img-top" alt="..." />
