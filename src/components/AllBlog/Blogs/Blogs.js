@@ -17,9 +17,7 @@ const Blogs = () => {
                     <h1>Collom 9</h1>
                     <div className="row row-cols-1 row-cols-md-2 g-4">
                         {
-                            blogs.map(blog => <Blog
-                                blogs={blog}
-                            >
+                            blogs.map(blog => <Blog blogs={blog}>
                             </Blog>)
                         }
                     </div>
