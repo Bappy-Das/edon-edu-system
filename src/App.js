@@ -13,6 +13,8 @@ import Enroll from './components/Enroll/Enroll';
 import Fao from './components/fao/Fao';
 import ContactUs from './components/ContactUs/ContactUs';
 import AuthProvider from './context/AuthProvider';
+import Instructors from './components/Instructor/Instructors/Instructors';
+import InstructorProfile from './components/Instructor/InstructorProfile/InstructorProfile';
 
 
 
@@ -27,9 +29,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="home" element={<Home />} />
             <Route path="fao" element={<Fao />} />
-            <Route path="contact" element={<ContactUs />} />
             <Route path="courses" element={<Courses />} />
+            <Route path="contact" element={<ContactUs />} />
             <Route path="enroll/:courseId" element={<Enroll />} />
+            <Route path="instructors" element={<Instructors />} />
+            <Route path="instructorProfile/:instructorId" element={<InstructorProfile />} />
             <Route path="blogs" element={<Blogs />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
