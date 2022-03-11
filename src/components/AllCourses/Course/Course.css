@@ -1,13 +1,18 @@
 .bg-pd-color{
     background-color: white;
 }
+/* .course-class{
+    height: 400px;
+} */
 .course-img{
     width: 260px;
     height: 150px;
+    border-radius: 5px;
 }
 .course-name{
     color: 171717;
     font-size: 16px;
+    height: 90px;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
 }

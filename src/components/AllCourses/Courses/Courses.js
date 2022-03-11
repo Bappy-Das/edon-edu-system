@@ -8,7 +8,7 @@ const Courses = () => {
         fetch('https://serene-mountain-32822.herokuapp.com/courses')
             .then(res => res.json())
             .then(data => setCourses(data));
-    }, [])
+    }, [Courses])
     return (
         <div className="container">
             <div className="course-hp-container">
