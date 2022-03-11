@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 // Import Swiper styles -----
 import "swiper/css";
+import { Link } from 'react-router-dom';
 
 const OurInstructor = () => {
     return (
@@ -15,8 +16,10 @@ const OurInstructor = () => {
                         <br />
                         <br />
                         Proin eget tortor risus. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, egettincidunt nibh pulvinar ultricies ligula sed magna dictum porta.</p>
-                    <br />
+                    <br />  
+                    <p><Link to="/instructors">
                     <button className='instructor-btn'>Instructor</button>
+                    </Link></p>
                 </div>
                 <div className="col-12 col-md-7 ">
                     <div className='instrctor-group '>
