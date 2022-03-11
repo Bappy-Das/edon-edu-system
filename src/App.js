@@ -9,29 +9,34 @@ import Navbar from './components/Shared/Navbar/Navbar';
 import Footer from './components/Shared/Footer/Footer';
 import Courses from './components/AllCourses/Courses/Courses';
 import Blogs from './components/AllBlog/Blogs/Blogs';
+import Enroll from './components/Enroll/Enroll';
 import Fao from './components/fao/Fao';
 import ContactUs from './components/ContactUs/ContactUs';
+import AuthProvider from './context/AuthProvider';
 
 
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Header />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="home" element={<Home />} />
-          <Route path="fao" element={<Fao />} />
-          <Route path="courses" element={<Courses />} />
-          <Route path="contact" element={<ContactUs />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+    <div>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header />
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="home" element={<Home />} />
+            <Route path="fao" element={<Fao />} />
+            <Route path="courses" element={<Courses />} />
+            <Route path="contact" element={<ContactUs />} />
+            <Route path="enroll/:courseId" element={<Enroll />} />
+            <Route path="blogs" element={<Blogs />} />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

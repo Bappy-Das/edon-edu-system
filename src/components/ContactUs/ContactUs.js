@@ -2,6 +2,10 @@ import { Button } from 'bootstrap';
 import React from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
 import './Contact.css'
+import { GrLocation, GrPhone, GrMailOption } from "react-icons/gr";
+import { BiTimeFive } from "react-icons/bi";
+
+
 const ContactUs = () => {
     return (
         <div>
@@ -50,23 +54,45 @@ const ContactUs = () => {
 
 
             </Container >
-            <Container>
+            <Container className="w-100 my-5">
                 <Row className='p-5' >
-                    <Col xs={12} md={3}>
-                        <h4>Our Address</h4>
-                        <h5> 07 Boroughbridge Road BISLEY GL6 5PA, USA </h5>
+                    <Col xs={12} md={3} className="d-flex">
+                        <div className='p-3'>
+                            <GrLocation size={30} />
+                        </div>
+                        <div>
+                            <h5>Our Address</h5>
+                            <h6> 07 Boroughbridge Road BISLEY GL6 5PA, USA </h6>
+                        </div>
                     </Col>
-                    <Col xs={12} md={3}>
-                        <h4>Our Address</h4>
-                        <h5> 07 Boroughbridge Road BISLEY GL6 5PA, USA </h5>
+                    <Col xs={12} md={3} className="d-flex">
+                        <div className='p-3'>
+                            <GrPhone size={30} />
+                        </div>
+                        <div>
+                            <h5>Contact</h5>
+                            <h6>+1(135) 1984 2020 </h6>
+                            <h6>+1(135) 1984 2020 </h6>
+                        </div>
                     </Col>
-                    <Col xs={12} md={3}>
-                        <h4>Our Address</h4>
-                        <h5> 07 Boroughbridge Road BISLEY GL6 5PA, USA </h5>
+                    <Col xs={12} md={3} className="d-flex">
+                        <div className='p-3'>
+                            <GrMailOption size={30} />
+                        </div>
+                        <div>
+                            <h5>Email</h5>
+                            <h6> hello@edon.com</h6>
+                            <h6> info@edon.com</h6>
+                        </div>
                     </Col>
-                    <Col xs={12} md={3}>
-                        <h4>Our Address</h4>
-                        <h5> 07 Boroughbridge Road BISLEY GL6 5PA, USA </h5>
+                    <Col xs={12} md={3} className="d-flex ab">
+                        <div className='p-3'>
+                            <BiTimeFive size={30} />
+                        </div>
+                        <div>
+                            <h5>Hours of Operation</h5>
+                            <h6>(8 AM - 7 PM, Monday - Friday)</h6>
+                        </div>
                     </Col>
 
                 </Row>

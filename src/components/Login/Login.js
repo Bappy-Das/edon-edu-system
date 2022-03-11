@@ -54,7 +54,7 @@ const Login = () => {
             <h1 className="text-center">Sign In</h1>
             <hr />
             <div className="text-center" >
-                <Button className="mx-2 w-25" variant="outline-primary"><FaFacebookSquare size={35} /></Button>
+                {/* <Button className="mx-2 w-25" variant="outline-primary"><FaFacebookSquare size={35} /></Button> */}
                 <Button onClick={handleGoogleLogin} className="w-25" variant="outline-warning"><FcGoogle size={35} /></Button>
 
             </div>

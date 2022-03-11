@@ -12,7 +12,7 @@ const Banefits = () => {
                 <Row>
                     <Col>
                         <div className='d-flex align-items-center justify-content-evenly'>
-                            <img className='img-fluid' src={learning} alt="" srcset="" />
+                            <img className='img-fluid' src={learning} alt="" srcSet="" />
 
                             <div className='ms-4'>
                                 <h3 className='benefit-title'>Expedite Learning</h3>
@@ -22,7 +22,7 @@ const Banefits = () => {
                     </Col>
                     <Col>
                         <div className='d-flex align-items-center justify-content-evenly'>
-                            <img className='img-fluid' src={source} alt="" srcset="" />
+                            <img className='img-fluid' src={source} alt="" srcSet="" />
 
                             <div className='ms-4'>
                                 <h3 className='benefit-title'>Open-source Platform</h3>
@@ -32,7 +32,7 @@ const Banefits = () => {
                     </Col>
                     <Col>
                         <div className='d-flex align-items-center justify-content-evenly'>
-                            <img className='img-fluid' src={efficency} alt="" srcset="" />
+                            <img className='img-fluid' src={efficency} alt="" srcSet="" />
 
                             <div className='ms-4'>
                                 <h3 className='benefit-title'>Maximum Efficiency</h3>

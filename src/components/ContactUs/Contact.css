@@ -5,7 +5,8 @@
     padding: 7px 15px 7px 15px;
     font-size: 14px;
     font-family: inherit;
-    border: none;
+    border: 1px solid #9cceb7;
+    border-radius: 5px;
     margin-top: 6px;
 }
 .btn-contact:hover{
