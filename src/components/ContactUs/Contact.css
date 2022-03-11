@@ -1,0 +1,15 @@
+.btn-contact{
+    background-color: #67bd95;
+    font-weight: bold;
+    color: #000000;
+    padding: 7px 15px 7px 15px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #9cceb7;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+.btn-contact:hover{
+    background-color: #198754;
+    color: white;
+}
