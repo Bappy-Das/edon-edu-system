@@ -11,6 +11,9 @@
     cursor: pointer;
     font-family: "Roboto", sans-serif;
 }
+.course-name:link, course-name:hover, course-name:visited, course-name:link, course-name:active{
+    text-decoration: none;
+}
 .course-name:hover{
     color: #1bbf72;
 }

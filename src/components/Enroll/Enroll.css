@@ -1,14 +1,16 @@
+.course-details-bg{
+    background-color: #f5f1ee;
+    font-family: Roboto, sans-serif;
+}
 .header-style{
     width: 800px;
     font-size: 40px;
     margin-bottom: 18px;
     font-weight: bold;
     color: #171717;
-    font-family: Roboto, sans-serif;
 }
 .course-details{
     padding-right: 20px;
-    font-family: Roboto, sans-serif;
 }
 .course-details-title{
     font-size: 20px;
@@ -39,14 +41,13 @@
     margin: 0; 
 }
 .course-li li{
-    font-family: Roboto, sans-serif;
     list-style-type: none;
     font-size: 15px;
     margin-bottom: 12px;
     color: #6a6f73;
 }
 .enroll-bg{
-    background-color: #F2F7FA;
+    background-color: #f2f7fa;
 }
 .btn-enroll{
     background-color: #1bbf72;
