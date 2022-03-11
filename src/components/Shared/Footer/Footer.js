@@ -10,7 +10,7 @@ const Footer = () => {
             <Container>
                 <Row className='my-5'>
                     <Col md={3}>
-                        <img src={footerLogo} alt="" srcset="" />
+                        <img src={footerLogo} alt="" srcSet="" />
                         <p className='mt-4'> Vivamus suscipit tortor eget felis porttitor volutpat. Donec rutrum congue leo eget malesuada. Curabitu Nulla porttitor accumsan tincidunt.</p>
                         <div className=''>
                             <FaYoutubeSquare size={40} />

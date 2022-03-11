@@ -10,7 +10,7 @@ const Achievements = () => {
             <Row>
                 <Col >
                     <Row className='achivement'>
-                        <Col sm={3} className='p-4' ><img className='img-fluid' src={achivementMan} alt="" srcset="" /></Col>
+                        <Col sm={3} className='p-4' ><img className='img-fluid' src={achivementMan} alt="" srcSet="" /></Col>
                         <Col sm={8} className='mt-5 '>
                             <h3 className='font-weight-bold'>Our Achievements</h3>
                             <p>Learn the secrets of life success, all the successes we have achieved in achieving goals.</p>
@@ -18,7 +18,7 @@ const Achievements = () => {
                     </Row>
                 </Col>
                 <Col>
-                    <img className='img-fluid ' src={counterImg} alt="" srcset="" />
+                    <img className='img-fluid ' src={counterImg} alt="" srcSet="" />
                 </Col>
             </Row>
             <Row>

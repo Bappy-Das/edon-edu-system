@@ -85,7 +85,7 @@ const ContactUs = () => {
                             <h6> info@edon.com</h6>
                         </div>
                     </Col>
-                    <Col xs={12} md={3} className="d-flex">
+                    <Col xs={12} md={3} className="d-flex ab">
                         <div className='p-3'>
                             <BiTimeFive size={30} />
                         </div>
